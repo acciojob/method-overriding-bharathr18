@@ -7,11 +7,8 @@ public class Main {
             return "Invoking method from class A";
         }
     }
-
     public static class B extends A
     {
-
-        @Override
         public String meth() {
             return "Method is overridden in Extended class com.driver.B";
         }
@@ -19,9 +16,7 @@ public class Main {
     }
     public static void main(String args[])
     {
-        A a = new A();
-        System.out.println(a.meth());
         B b = new B();
-        System.out.println(b.meth());
+        b.meth();
     }
 }
